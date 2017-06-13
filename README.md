@@ -13,4 +13,4 @@ O objetivo deste documento é apresentar uma proposta para o trabalho a ser dese
 
   O trabalho final tem como tema o desenvolvimento de um site para venda de ingressos de cinema. :ticket:
 
-  O detalhamento completo da proposta pode ser encontrado no arquivo PropostaTPFinalVendaIngressos.pdf neste repositório.
+  O detalhamento completo da proposta pode ser encontrado no arquivo "PropostaTPFinalVendaIngressos.pdf" neste repositório.
