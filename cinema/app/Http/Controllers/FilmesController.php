@@ -26,7 +26,7 @@ class FilmesController extends Controller
      */
     public function create()
     {
-        //
+        return view('filmes.create');
     }
 
     /**
@@ -37,7 +37,8 @@ class FilmesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Filme::create($request->all());
+        return redirect('/filmes');
     }
 
     /**
@@ -48,7 +49,8 @@ class FilmesController extends Controller
      */
     public function show($id)
     {
-        //
+        $filmes = Filme::find($id);
+        return view('filmes.show')->with('filmes',$filmes);
     }
 
     /**
@@ -59,7 +61,8 @@ class FilmesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $filmes = Filme::find($id);
+        return view('filmes.edit')->with('filmes',$filmes);
     }
 
     /**
@@ -71,7 +74,18 @@ class FilmesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $filmes = Filme::find($id);
+        $filmes->nome = $request->nome;
+        $filmes->genero = $request->genero;
+        $filmes->duracao = $request->duracao;
+        $filmes->sinopse = $request->sinopse;
+        $filmes->elenco = $request->elenco;
+        $filmes->diretor = $request->diretor;
+        $filmes->classificacao = $request->classificacao;
+        $filmes->capa = $request->capa;
+        $filmes->trailer = $request->trailer;
+        $filmes->save();
+        return redirect('/filmes');
     }
 
     /**
@@ -82,6 +96,8 @@ class FilmesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $filmes = Filme::find($id);
+        $filmes->delete();
+        return redirect('/filmes');
     }
 }

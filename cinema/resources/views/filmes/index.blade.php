@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h1>Todos Filmes da Base de Dados</h1>
+<h3>Todos Filmes da Base de Dados:</h3>
 
 <table class="table table-condensed">
   <th>ID</th>
@@ -15,6 +15,8 @@
   <th>Classificação</th>
   <th>Capa</th>
   <th>Trailer</th>
+  <th>Editar</th>
+  <th>Excluir</th>
   @foreach($filmes as $f)
   <tr>
     <td>{{ $f->id }}</td>
