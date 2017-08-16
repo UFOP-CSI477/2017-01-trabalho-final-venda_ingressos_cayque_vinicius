@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 16, 2017 at 01:46 AM
+-- Generation Time: Aug 16, 2017 at 02:41 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.0.15
 
@@ -13,6 +13,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `cinema`
 --
+CREATE DATABASE IF NOT EXISTS `cinema` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `cinema`;
 
 -- --------------------------------------------------------
 
@@ -20,6 +22,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `banners`
 --
 
+DROP TABLE IF EXISTS `banners`;
 CREATE TABLE `banners` (
   `id` int(11) NOT NULL,
   `imagem` varchar(30) NOT NULL
@@ -31,6 +34,7 @@ CREATE TABLE `banners` (
 -- Table structure for table `carrinhos`
 --
 
+DROP TABLE IF EXISTS `carrinhos`;
 CREATE TABLE `carrinhos` (
   `id` int(11) NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
@@ -45,6 +49,7 @@ CREATE TABLE `carrinhos` (
 -- Table structure for table `filmes`
 --
 
+DROP TABLE IF EXISTS `filmes`;
 CREATE TABLE `filmes` (
   `id` int(11) NOT NULL,
   `nome` varchar(70) NOT NULL,
@@ -64,6 +69,7 @@ CREATE TABLE `filmes` (
 -- Table structure for table `iniciofilmes`
 --
 
+DROP TABLE IF EXISTS `iniciofilmes`;
 CREATE TABLE `iniciofilmes` (
   `id` int(11) NOT NULL,
   `filme_id` int(11) NOT NULL
@@ -75,6 +81,7 @@ CREATE TABLE `iniciofilmes` (
 -- Table structure for table `migrations`
 --
 
+DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE `migrations` (
   `id` int(10) UNSIGNED NOT NULL,
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -87,6 +94,7 @@ CREATE TABLE `migrations` (
 -- Table structure for table `proximos`
 --
 
+DROP TABLE IF EXISTS `proximos`;
 CREATE TABLE `proximos` (
   `id` int(11) NOT NULL,
   `filme_id` int(11) NOT NULL
@@ -98,6 +106,7 @@ CREATE TABLE `proximos` (
 -- Table structure for table `sessaos`
 --
 
+DROP TABLE IF EXISTS `sessaos`;
 CREATE TABLE `sessaos` (
   `id` int(11) NOT NULL,
   `filme_id` int(11) NOT NULL,
@@ -115,6 +124,7 @@ CREATE TABLE `sessaos` (
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
