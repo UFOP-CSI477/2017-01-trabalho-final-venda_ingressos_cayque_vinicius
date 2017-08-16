@@ -50,7 +50,7 @@
           </div>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/no-edit/color/96" title="No Edit" width="96" height="96">
+            <a href="/filmes"><img src="https://png.icons8.com/no-edit/color/96" title="No Edit" width="96" height="96"></a>
             <h4>Editar/Excluir filme</h4>
             <p>Edite ou exclua as informações<br>de um filme cadastrado.</p>
           </div>

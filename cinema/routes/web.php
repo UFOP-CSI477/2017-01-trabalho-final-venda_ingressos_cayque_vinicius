@@ -19,6 +19,8 @@ Route::get('/', function () {
     return view('areaAdmin.principal');
 });
 
+Route::get('/filmes', 'FilmesController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
