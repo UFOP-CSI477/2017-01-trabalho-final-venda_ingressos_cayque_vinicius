@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('areaAdmin.principal');
 });
 
-Route::get('/filmes', 'FilmesController@index');
+Route::resource('/filmes', 'FilmesController');
 
 Auth::routes();
 

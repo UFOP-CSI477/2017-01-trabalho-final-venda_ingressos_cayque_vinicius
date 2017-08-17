@@ -22,6 +22,7 @@
     <td>{{ $f->id }}</td>
     <td>{{ $f->nome }}</td>
     <td>{{ $f->genero }}</td>
+    <td>{{ $f->duracao }}</td>
     <td>{{ $f->sinopse }}</td>
     <td>{{ $f->elenco }}</td>
     <td>{{ $f->diretor }}</td>

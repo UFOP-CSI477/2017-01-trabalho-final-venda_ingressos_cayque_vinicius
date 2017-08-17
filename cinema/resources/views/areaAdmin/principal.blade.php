@@ -44,7 +44,7 @@
           <h3>Filmes</h3>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/add-to-favorites/color/96" title="Add Database" width="96" height="96">
+            <a href="/filmes/create"><img src="https://png.icons8.com/add-to-favorites/color/96" title="Add Database" width="96" height="96"></a>
             <h4>Adicionar novo filme</h4>
             <p>Adicione informações<br>de um novo filme na base de dados.</p>
           </div>
