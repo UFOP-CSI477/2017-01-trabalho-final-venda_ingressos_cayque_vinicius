@@ -78,7 +78,7 @@ class UsersController extends Controller
         $users = user::find($id);
         $users->type = $request->type;
         $users->save();
-        return redirect('/users/edit');
+        return redirect('/users/listar');
     }
 
     /**

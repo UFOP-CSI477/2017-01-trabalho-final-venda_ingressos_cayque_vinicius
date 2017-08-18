@@ -23,7 +23,7 @@
     @if($u->type == 1)
       <td>1-Cliente</td>
     @else($u->type == 2)
-      <td>2-Admnistrador</td>
+      <td>2-Administrador</td>
     @endif
     <td>{{$u->cpf}}</td>
     <td>{{$u->estado}}</td>

@@ -8,8 +8,14 @@
   {{ csrf_field() }}
   {{ method_field('PATCH') }}
 
-
-
+  <input type="text" name="id" value="{{$user->id}}">
+  <input type="text" name="name" value="{{$user->name}}">
+  <select class="" name="type">
+    <option value="">Selecione...</option>
+    <option value="1">Cliente</option>
+    <option value="2">Administrador</option>
+  </select>
+  <input type="submit" name="" value="Salvar">
 </form>
 
 @endsection
