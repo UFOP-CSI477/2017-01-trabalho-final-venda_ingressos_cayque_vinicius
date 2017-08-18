@@ -60,13 +60,13 @@
           <h3>Sessões</h3>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/starred-ticket/color/96" title="Starred Ticket" width="96" height="96">
+            <a href="/sessaos/create"><img src="https://png.icons8.com/starred-ticket/color/96" title="Starred Ticket" width="96" height="96"></a>
             <h4>Cadastrar nova sessão</h4>
             <p>Adicione uma nova<br>sessão de exibição para um determinado filme.</p>
           </div>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/video-editing/color/96" title="Video Editing" width="96" height="96">
+            <a href="/sessaos"><img src="https://png.icons8.com/video-editing/color/96" title="Video Editing" width="96" height="96"></a>
             <h4>Editar/Excluir sessão</h4>
             <p>Edite ou exclua as informações<br>de uma sessão cadastrada.</p>
           </div>

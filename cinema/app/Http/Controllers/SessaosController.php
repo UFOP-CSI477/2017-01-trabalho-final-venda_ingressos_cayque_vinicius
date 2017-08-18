@@ -28,8 +28,8 @@ class SessaosController extends Controller
      */
     public function create()
     {
-
-        return view('sessaos.create');
+        $filme = Filme::all();
+        return view('sessaos.create')->with('filme',$filme);
     }
 
     /**
@@ -52,6 +52,7 @@ class SessaosController extends Controller
      */
     public function show($id)
     {
+        $filme = Filme::all();
         $sessao = Sessao::find($id);
         return view('sessaos.show')->with('sessao',$sessao);
     }
@@ -64,8 +65,9 @@ class SessaosController extends Controller
      */
     public function edit($id)
     {
+        $filme = Filme::all();
         $sessao = Sessao::find($id);
-        return view('sessaos.edit')->with('sessao',$sessao);
+        return view('sessaos.edit')->with('sessao',$sessao)->with('filme',$filme);
     }
 
     /**

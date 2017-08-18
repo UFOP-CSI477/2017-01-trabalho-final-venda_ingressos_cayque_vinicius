@@ -2,8 +2,6 @@
 
 @section('conteudo')
 
-
-
 <div class="container">
   <h3>Inserir Novo Filme:</h3>
   <form class="" action="/filmes" method="post">
@@ -22,7 +20,15 @@
           <label for="genero">Genêro:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-            <input type="text" class="form-control" name="genero" placeholder="Genêro do filme...">
+            <select class="" name="genero">
+              <option value="">Selecione...</option>
+              <option value="Ação">Ação</option>
+              <option value="Comédia">Comédia</option>
+              <option value="Romance">Romance</option>
+              <option value="Fantasia">Fantasia</option>
+              <option value="Terror">Terror</option>
+              <option value="Suspense">Suspense</option>
+            </select>
           </div>
         </div>
         <div class="col-md-6">

@@ -34,5 +34,4 @@
   </tr>
   @endforeach
 </table>
-
 @endsection
