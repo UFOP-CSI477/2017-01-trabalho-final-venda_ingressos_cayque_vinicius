@@ -28,7 +28,7 @@
           <h3>Personalização da tela inicial</h3>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/documentary/color/96" title="Documentary" width="96" height="96">
+            <a href="/proximos"><img src="https://png.icons8.com/documentary/color/96" title="Documentary" width="96" height="96"></a>
             <h4>Adicionar próximos lançamentos</h4>
             <p>Selecione quais filmes irão aparecer<br>na sessão de próximos lançamentos<br>na página inicial do site.</p>
           </div>

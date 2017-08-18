@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Route::get('/users/listar', 'UsersController@view');
 
+Route::resource('/proximos', 'ProximosController');
+
 Route::resource('/filmes', 'FilmesController');
 
 Route::resource('/sessaos', 'SessaosController');
