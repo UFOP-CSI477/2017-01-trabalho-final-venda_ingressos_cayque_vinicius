@@ -19,9 +19,13 @@ Route::get('/', function () {
     return view('areaAdmin.principal');
 });
 
+Route::get('/users/listar', 'UsersController@view');
+
 Route::resource('/filmes', 'FilmesController');
 
 Route::resource('/sessaos', 'SessaosController');
+
+Route::resource('/users', 'UsersController');
 
 Auth::routes();
 

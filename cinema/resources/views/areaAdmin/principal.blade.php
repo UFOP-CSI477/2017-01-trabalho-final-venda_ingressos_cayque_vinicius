@@ -76,13 +76,13 @@
           <h3>Usuários</h3>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/user-menu-male/color/96" title="User Menu Male" width="96" height="96">
+            <a href="/users/listar"><img src="https://png.icons8.com/user-menu-male/color/96" title="User Menu Male" width="96" height="96"></a>
             <h4>Alterar o tipo de um usuário</h4>
             <p>Torne um outro usuário administrador<br>alterando o seu código de tipo.</p>
           </div>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/user-manual/color/96" title="User Manual" width="96" height="96">
+            <a href="/users"><img src="https://png.icons8.com/user-manual/color/96" title="User Manual" width="96" height="96"></a>
             <h4>Listar usuários</h4>
             <p>Visualize uma lista com todos os usuários cadastrados no sistema.</p>
           </div>
