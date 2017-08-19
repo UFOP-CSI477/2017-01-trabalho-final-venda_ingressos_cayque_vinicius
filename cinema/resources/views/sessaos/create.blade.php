@@ -26,7 +26,7 @@
         <div class="col-md-4">
           <label for="dublado">Dublado:</label>
           <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-sound-dolby"></i></span>
             <select class="" name="dublado">
               <option value="">Selecione...</option>
               <option value="1">Sim</option>
@@ -37,7 +37,7 @@
         <div class="col-md-4">
           <label for="legendado">Legendado:</label>
           <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-subtitles"></i></span>
             <select class="" name="legendado">
               <option value="">Selecione...</option>
               <option value="1">Sim</option>
@@ -50,28 +50,28 @@
         <div class="col-md-3">
           <label for="data">Data:</label>
           <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
             <input type="text" name="data" placeholder="dd/mm/aaaa">
           </div>
         </div>
         <div class="col-md-3">
           <label for="hora">Hora:</label>
           <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
             <input type="text" name="hora" placeholder="hh:mm:ss">
           </div>
         </div>
         <div class="col-md-3">
           <label for="local">Local:</label>
           <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
             <input type="text" name="local" placeholder="Digite o local da sessão...">
           </div>
         </div>
         <div class="col-md-3">
           <label for="preco">Preço:</label>
           <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-bitcoin"></i></span>
             <input type="text" name="preco" placeholder="Digite o preço da sessão...">
           </div>
         </div>

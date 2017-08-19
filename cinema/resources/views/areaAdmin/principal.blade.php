@@ -34,7 +34,7 @@
           </div>
 
           <div class="col-md-3" align="center" id="selecionado">
-            <img src="https://png.icons8.com/movie/color/96" title="Movie" width="96" height="96">
+            <a href="/banners"><img src="https://png.icons8.com/movie/color/96" title="Movie" width="96" height="96"></a>
             <h4>Alterar os banners da<br>página inicial</h4>
             <p>Altere os banners que são<br>exibidos no carousel da página inicial.</p>
           </div>
