@@ -16,6 +16,12 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/', function () {
+    return view('areaInicio.inicio');
+});
+
+Route::get('/inicio', 'InicioController@index');
+
+Route::get('/areaadmin', function () {
     return view('areaAdmin.principal');
 });
 
