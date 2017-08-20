@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -25,7 +26,16 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    //protected $redirectTo = '/home';
+
+    protected function redirectTo()
+    {
+      if(Auth::user()->type == 1) {
+        return '/';
+      } else if(Auth::user()->type == 2) {
+        return '/areaadmin';
+      }
+    }
 
     /**
      * Create a new controller instance.

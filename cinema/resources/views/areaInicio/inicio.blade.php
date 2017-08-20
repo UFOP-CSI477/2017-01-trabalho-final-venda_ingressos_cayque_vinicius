@@ -70,7 +70,7 @@
         <img src="{{$p->filme->capa}}" alt="" width="130" height="192">
         <br><br>
         <p id="conteudo"><strong>{{$p->filme->nome}}</strong><br></p>
-        <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="/detalhes/{{$p->filme->id}}" role="button">Ver detalhes &raquo;</a></p>
       </div>
     @endforeach
   </div>

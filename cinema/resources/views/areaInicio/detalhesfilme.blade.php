@@ -12,7 +12,7 @@
       <div class="col-md-9" id="titulo">
         <h1 class="text-left">{{$filme->nome}}</h1><br>
         <strong>Sinopse</strong><p class="text-justify">{{$filme->sinopse}}</p>
-        <br><br>
+
         <div class="row">
           <div class="col-md-4">
             <img src="https://png.icons8.com/theatre-mask/office/30" title="Theatre Mask" width="30" height="30">
@@ -53,43 +53,53 @@
             <img src="https://png.icons8.com/reality-stars/office/30" title="Reality Stars" width="30" height="30">
             <strong>Elenco: </strong>{{$filme->elenco}}
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <br>
-            <strong>Escolha uma sessão:</strong>
-            <select class="form form-control" name="sessao">
-              @foreach($sessoes as $s)
-              <option value="{{$s->id}}">{{$s->data}} -- {{$s->hora}} -- R$ {{$s->preco}} --
-                Dublado:
-                @if($s->dublado == 0)
+        </div><br>
+
+            @if($total > 0)
+              <div class="row">
+                <div class="col-md-8">
+              <strong>Escolha uma sessão:</strong>
+              <select class="form form-control" name="sessao">
+                @foreach($sessoes as $s)
+                <option value="{{$s->id}}">{{$s->data}} -- {{$s->hora}} -- R$ {{$s->preco}} --
+                  Dublado:
+                  @if($s->dublado == 0)
+                  Não
+                  @else
+                  Sim
+                @endif
+                -- Legendado:
+                @if($s->legendado == 0)
                 Não
                 @else
                 Sim
               @endif
-              -- Legendado:
-              @if($s->legendado == 0)
-              Não
-              @else
-              Sim
-            @endif
-            </option>
-              @endforeach
-            </select>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <strong>Quantidade de ingressos: </strong>
-            <div class="col-md-3">
-              <input type="number" class="form-control" name="quantidade" min="1" max="10" value="1">
+              </option>
+                @endforeach
+              </select>
             </div>
+            <div class="col-md-4">
+              <strong>Quantidade de ingressos: </strong>
+                <input type="number" class="form-control" name="quantidade" min="1" max="10" value="1">
+            </div>
+            </div>
+          @else
+            <h3 id="titulo">Disponível em breve</h3>
+          @endif
 
-          </div>
+        <br>
+        <div class="row">
+          @if (Auth::guest())
+            <p>&nbsp;&nbsp;Para adquirir um ingresso, efetue <a href="/login">login</a> ou <a href="/register"> registre-se</a>.</p>
+          @elseif($total > 0)
+            <div class="col-md-12" align="right">
+              <a href="#" class="btn btn-success text-center"><i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i> Adicionar ao carrinho</a>
+            </div>
+          @endif
+
         </div>
 
-        <br><br>
+        <br>
         <strong>Veja o trailer:</strong><br><br>
         <iframe width="560" height="315" src= "{{$filme->trailer}}" frameborder="0" allowfullscreen></iframe>
 

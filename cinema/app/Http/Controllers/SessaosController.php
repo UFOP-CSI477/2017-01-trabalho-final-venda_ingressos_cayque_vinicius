@@ -61,7 +61,8 @@ class SessaosController extends Controller
     {
       $filme = Filme::find($id);
       $sessoes = Sessao::where('filme_id', '=', $id)->get();
-      return view('areaInicio.detalhesFilme')->with('filme', $filme)->with('sessoes', $sessoes);
+      $total = Sessao::where('filme_id', '=', $id)->get()->count();
+      return view('areaInicio.detalhesFilme')->with('filme', $filme)->with('sessoes', $sessoes)->with('total', $total);
     }
 
     /**

@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      if(Auth::user()->type == 1) {
+        return '/';
+      } else if(Auth::user()->type == 2) {
+        return '/areaadmin';
+      }
+
     }
 }
