@@ -64,9 +64,9 @@ class CarrinhoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Carrinho $carrinho)
     {
-        //
+        return view('areaInicio.carrinho.listaexcluir')->with('carrinho', $carrinho);
     }
 
     /**
@@ -98,8 +98,9 @@ class CarrinhoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Carrinho $carrinho)
     {
-        //
+      $carrinho->delete();
+      return redirect('/carrinho');
     }
 }

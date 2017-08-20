@@ -61,7 +61,7 @@
               <td>{{$i->sessao->local}}</td>
               <td>{{$i->sessao->preco}}</td>
               <td>{{$i->quantidade}}</td>
-              <td><a href="#" class="btn btn-danger">Excluir</a></td>
+              <td><a href="/carrinho/{{$i->id}}" class="btn btn-danger">Excluir</a></td>
             </tr>
             @endforeach
           </tbody>
