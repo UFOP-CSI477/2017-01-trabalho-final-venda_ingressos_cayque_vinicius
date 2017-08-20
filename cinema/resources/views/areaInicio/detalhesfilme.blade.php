@@ -1,7 +1,8 @@
 @extends('areaInicio.cabecalho')
 
 @section('conteudo')
-
+<form class="" action="/carrinho/confirmar" method="post">
+  {{csrf_field()}}
 <div id="backpagina">
   <div class="container" id="planofundo">
     <br>
@@ -58,31 +59,35 @@
             @if($total > 0)
               <div class="row">
                 <div class="col-md-8">
-              <strong>Escolha uma sessão:</strong>
-              <select class="form form-control" name="sessao">
-                @foreach($sessoes as $s)
-                <option value="{{$s->id}}">{{$s->data}} -- {{$s->hora}} -- R$ {{$s->preco}} --
-                  Dublado:
-                  @if($s->dublado == 0)
-                  Não
-                  @else
-                  Sim
-                @endif
-                -- Legendado:
-                @if($s->legendado == 0)
-                Não
-                @else
-                Sim
-              @endif
-              </option>
-                @endforeach
-              </select>
-            </div>
-            <div class="col-md-4">
-              <strong>Quantidade de ingressos: </strong>
-                <input type="number" class="form-control" name="quantidade" min="1" max="10" value="1">
-            </div>
-            </div>
+                  <strong>Escolha uma sessão:</strong>
+                  <select class="form form-control" name="sessao_id">
+                    @foreach($sessoes as $s)
+                    <option value="{{$s->id}}" onclick="mudarvalor()">{{$s->data}} -- {{$s->hora}} -- R$ {{$s->preco}} --
+                      Dublado:
+                      @if($s->dublado == 0)
+                      Não
+                      @else
+                      Sim
+                    @endif
+                    -- Legendado:
+                    @if($s->legendado == 0)
+                    Não
+                    @else
+                    Sim
+                  @endif
+                  </option>
+
+                  @endforeach
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <strong>Quantidade de ingressos: </strong>
+                    <input type="number" class="form-control" name="quantidade" min="1" max="10" value="1">
+                </div>
+
+              </div>
+
           @else
             <h3 id="titulo">Disponível em breve</h3>
           @endif
@@ -93,10 +98,15 @@
             <p>&nbsp;&nbsp;Para adquirir um ingresso, efetue <a href="/login">login</a> ou <a href="/register"> registre-se</a>.</p>
           @elseif($total > 0)
             <div class="col-md-12" align="right">
-              <a href="#" class="btn btn-success text-center"><i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i> Adicionar ao carrinho</a>
+
+
+
+
+
+                <input type="submit" class="btn btn-success text-center" value="Adicionar ao carrinho">
+              </form>
             </div>
           @endif
-
         </div>
 
         <br>

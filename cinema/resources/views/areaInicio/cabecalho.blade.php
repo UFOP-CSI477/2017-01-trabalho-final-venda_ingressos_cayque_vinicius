@@ -61,7 +61,7 @@
           @else
 
             <label for="" class="text-muted" id="tituloinicio"><strong>Seja bem-vindo(a),</strong>{{ Auth::user()->name }}.  </label>
-            <a href="#" class="btn btn-outline-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Ver meu carrinho</a>
+            <a href="/carrinho" class="btn btn-outline-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Ver meu carrinho</a>
             <a href="{{ route('logout') }}" class="btn btn-outline-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> Sair</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}

@@ -7,6 +7,7 @@ use App\Carrinho;
 use App\Filme;
 use App\Sessao;
 use Auth;
+Use Redirect;
 
 
 class CarrinhoController extends Controller
@@ -18,10 +19,22 @@ class CarrinhoController extends Controller
      */
     public function index()
     {
-
       $itens = Carrinho::where('user_id', '=', Auth::user()->id)->get();
       $total = Carrinho::where('user_id', '=', Auth::user()->id)->count();
       return view('areaInicio.carrinho.index')->with('itens', $itens)->with('total', $total);
+    }
+
+    public function confirmar(Request $request) {
+      //return dd($request->all());
+      $dadossessao = Sessao::find($request->sessao_id);
+      return view('areaInicio.carrinho.confirmar')->with('dados', $request)->with('dado', $dadossessao);
+      //return Redirect::to("/carrinho/adicionar/$request->sessao_id");
+
+    }
+
+    public function adcitem(Request $request) {
+      Carrinho::create($request->all());
+      return redirect('/carrinho');
     }
 
     /**

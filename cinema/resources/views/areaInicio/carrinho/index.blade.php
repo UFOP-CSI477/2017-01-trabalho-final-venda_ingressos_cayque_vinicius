@@ -22,6 +22,53 @@
       </div>
 
     @endif
+      <div class="container" id="fundobranco">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Nome do filme</th>
+              <th>Horário da sessão</th>
+              <th>Data</th>
+              <th>Dublado</th>
+              <th>Legendado</th>
+              <th>Local</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Remover do carrinho</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            @foreach($itens as $i)
+            <tr>
+              <td>{{$i->sessao->filme->nome}}</td>
+              <td>{{$i->sessao->hora}}</td>
+              <td>{{$i->sessao->data}}</td>
+              <td>
+                @if($i->sessao->dublado == 1)
+                  Sim
+                @else
+                  Não
+                @endif
+              </td>
+              <td>
+                @if($i->sessao->legendado == 1)
+                  Sim
+                @else
+                  Não
+                @endif
+              </td>
+              <td>{{$i->sessao->local}}</td>
+              <td>{{$i->sessao->preco}}</td>
+              <td>{{$i->quantidade}}</td>
+              <td><a href="#" class="btn btn-danger">Excluir</a></td>
+            </tr>
+            @endforeach
+          </tbody>
+
+        </table>
+
+      </div>
 
 
 </div>

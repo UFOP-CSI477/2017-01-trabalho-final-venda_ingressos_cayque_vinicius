@@ -26,6 +26,15 @@ Route::get('/listafilmes/terror', 'ListaFilmesController@filmesTerror');
 
 Route::get('/detalhes/{id}', 'SessaosController@detalhes');
 
+Route::post('/carrinho/confirmar', 'CarrinhoController@confirmar');
+
+//Route::get('/confirmar', 'CarrinhoController@')
+
+//Route::get('/confirmar', function () {
+//    return view('areaInicio.carrinho.confirmar');
+//});
+
+Route::post('/carrinho/adicionar/{sessao}', 'CarrinhoController@adcItem');
 
 Route::get('/areaadmin', function () {
     return view('areaAdmin.principal');
