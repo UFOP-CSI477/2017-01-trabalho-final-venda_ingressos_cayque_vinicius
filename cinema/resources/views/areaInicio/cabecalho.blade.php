@@ -17,17 +17,13 @@
 
     <!--Navbar fixa do topo da página-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Início</a>
+      <a class="navbar-brand" href="/">Início</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#teste">Em breve</a>
-          </li>
 
           <li class="nav-item">
             <a class="nav-link" href="/listafilmes/acao">Ação</a>
@@ -75,6 +71,45 @@
     </nav>
 
     @yield('conteudo')
+
+
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <!-- FOOTER -->
+    <footer id="backfooter">
+      <br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" align="center">
+            <img src="/img/logo.png" alt="logo" width="45%">
+          </div>
+          <div class="col-md-6">
+            <label for=""><strong>Dupla: </strong>Cayque Santos, Vinicius Arantes</label><br>
+            <label for=""><strong>Disciplina: </strong>Sistemas Web I</label><br>
+            <label for=""><strong>Professor: </strong>Fernando Oliveira</label><br>
+            <label for=""><strong>Período: </strong>2017.1</label><br>
+            <p class="float-right"><a href="#">Ir para o topo</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /.container -->
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../../../dist/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../../../../assets/js/vendor/holder.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
   </body>
 </html>

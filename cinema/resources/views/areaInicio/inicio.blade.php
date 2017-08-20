@@ -7,11 +7,12 @@
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="first-slide" src="/img/logo.png" alt="First slide">
+      <img class="first-slide" src="/img/inicio.png" alt="First slide">
     </div>
 
     @foreach($banners as $b)
@@ -32,7 +33,7 @@
   </a>
 </div>
 
-<div class="container marketing" id="ComoFunciona">
+<div class="container marketing">
   <h1 class="text-center" id="titulos">COMO FUNCIONA?</h1><br>
   <div class="row">
 
@@ -63,7 +64,7 @@
 
 
 <hr class="featurette-divider">
-  <h1 class="text-center" id="titulos">EM BREVE...</h1><br>
+  <h1 class="text-center" id="titulos">EM BREVE</h1><br>
   <div class="row">
     @foreach($proximos as $p)
       <div class="col-md-2" align="center">
@@ -80,33 +81,5 @@
   <div align="center">
     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">https://embedgooglemaps.com/pt/</a></small></div><div><small><a href="http://www.genkigirl.net/">best alternatives for forex bot</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(-19.828592385482583,-43.16551652404672),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-19.828592385482583,-43.16551652404672)});infowindow = new google.maps.InfoWindow({content:'<strong>R. Trinta e Seis, 115 - Loanda, João Monlevade - MG, 35931-008</strong><br>R. Trinta e Seis, 115 - Loanda, João Monlevade - MG, 35931-008<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
   </div>
-
-
-
-
-  <hr class="featurette-divider">
-
-  <!-- /END THE FEATURETTES -->
-
-
-  <!-- FOOTER -->
-  <footer>
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
-
-</div><!-- /.container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../../../assets/js/vendor/popper.min.js"></script>
-<script src="../../../../dist/js/bootstrap.min.js"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="../../../../assets/js/vendor/holder.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  <br><br>
 @endsection

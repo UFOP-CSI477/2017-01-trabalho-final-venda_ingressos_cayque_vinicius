@@ -21,7 +21,7 @@
         <br><br><br><br>
       </div>
 
-    @endif
+    @else
       <div class="container" id="fundobranco">
         <table class="table table-hover">
           <thead>
@@ -67,7 +67,11 @@
           </tbody>
 
         </table>
+      @endif
 
+      </div>
+      <div id="backpagina">
+        <br>
       </div>
 
 

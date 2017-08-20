@@ -36,7 +36,10 @@
 #backpagina {
   background-image: url("/img/moviePattern.png");
   background-repeat:repeat;
+}
 
+#backfooter {
+  background: linear-gradient(to bottom right, #f9fafc 0%, #d2d5db 100%);
 }
 
 

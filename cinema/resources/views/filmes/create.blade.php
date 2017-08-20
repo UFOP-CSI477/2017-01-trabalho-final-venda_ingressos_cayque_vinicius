@@ -25,7 +25,7 @@
               <option value="Ação">Ação</option>
               <option value="Comédia">Comédia</option>
               <option value="Romance">Romance</option>
-              <option value="Fantasia">Animação</option>
+              <option value="Animação">Animação</option>
               <option value="Terror">Terror</option>
               <option value="Suspense">Suspense</option>
             </select>

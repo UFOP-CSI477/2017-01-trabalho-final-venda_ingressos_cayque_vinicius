@@ -112,7 +112,7 @@
         <br>
         <strong>Veja o trailer:</strong><br><br>
         <iframe width="560" height="315" src= "{{$filme->trailer}}" frameborder="0" allowfullscreen></iframe>
-
+        <br><br>
       </div>
     </div>
 
