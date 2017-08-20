@@ -2,14 +2,14 @@
 
 @section('conteudo')
 
-<h3>Todos Filmes da Base de Dados:</h3>
+<h3>Todos Filmes da Base de Dados</h3><br>
+<a href="/areaadmin" class="btn btn-danger">Voltar ao menu principal</a><br><br>
 
 <table class="table table-condensed">
   <th>ID</th>
   <th>Nome</th>
   <th>Gênero</th>
   <th>Duração</th>
-  <th>Sinopse</th>
   <th>Elenco</th>
   <th>Diretor</th>
   <th>Classificação</th>
@@ -23,7 +23,6 @@
     <td>{{ $f->nome }}</td>
     <td>{{ $f->genero }}</td>
     <td>{{ $f->duracao }}</td>
-    <td>{{ $f->sinopse }}</td>
     <td>{{ $f->elenco }}</td>
     <td>{{ $f->diretor }}</td>
     <td>{{ $f->classificacao }}</td>

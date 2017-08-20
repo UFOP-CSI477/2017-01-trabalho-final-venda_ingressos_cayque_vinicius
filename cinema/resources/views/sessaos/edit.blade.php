@@ -16,7 +16,7 @@
           <label for="filme_id">Filme:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-            <select class="" name="filme_id">
+            <select class="form-control" name="filme_id">
               <option value="">Selecione...</option>
               @foreach($filme as $f)
                 <option value="{{ $f->id }}">{{$f->nome}}</option>
@@ -28,7 +28,7 @@
           <label for="dublado">Dublado:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-            <select class="" name="dublado">
+            <select class="form-control" name="dublado">
               <option value="">Selecione...</option>
               <option value="1">Sim</option>
               <option value="0">Não</option>
@@ -39,7 +39,7 @@
           <label for="legendado">Legendado:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-            <select class="" name="legendado">
+            <select class="form-control" name="legendado">
               <option value="">Selecione...</option>
               <option value="1">Sim</option>
               <option value="0">Não</option>
@@ -52,34 +52,35 @@
           <label for="data">Data:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-            <input type="text" name="data" value="{{ $sessao->data }}">
+            <input type="text" name="data" class="form-control" value="{{ $sessao->data }}">
           </div>
         </div>
         <div class="col-md-3">
           <label for="hora">Hora:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-            <input type="text" name="hora" value="{{ $sessao->hora }}">
+            <input type="text" name="hora" class="form-control" value="{{ $sessao->hora }}">
           </div>
         </div>
         <div class="col-md-3">
           <label for="local">Local:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-            <input type="text" name="local" value="{{ $sessao->local }}">
+            <input type="text" name="local" class="form-control" value="{{ $sessao->local }}">
           </div>
         </div>
         <div class="col-md-3">
           <label for="preco">Preço:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-            <input type="text" name="preco" value="{{ $sessao->preco }}">
+            <input type="text" class="form-control" name="preco" value="{{ $sessao->preco }}">
           </div>
         </div>
       </div>
       </fieldset>
       <br><input type="submit" value="Confirmar" class="btn btn-success">
-      <input type="reset" value="Limpar todos os campos" class="btn btn-danger">
+      <input type="reset" value="Limpar todos os campos" class="btn btn-info">
+      <a href="/areaadmin" class="btn btn-danger">Voltar ao menu principal</a>
   </form>
 </div>
 @endsection

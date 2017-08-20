@@ -20,7 +20,7 @@
           <label for="genero">Genêro:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-            <select class="" name="genero">
+            <select class="form-control" name="genero">
               <option value="">Selecione...</option>
               <option value="Ação">Ação</option>
               <option value="Comédia">Comédia</option>
@@ -65,7 +65,7 @@
           <label for="classificacao">Classificação:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
-            <select class="" name="classificacao">
+            <select class="form-control" name="classificacao">
               <option value="">Escolha...</option>
               <option value="0">L - Livre</option>
               <option value="10">10 - Não recomendado para menores de 10 anos</option>
@@ -92,8 +92,11 @@
         </div>
       </div>
     </fieldset>
+    <br>
     <input type="submit" value="Cadastrar" class="btn btn-success">
-    <input type="reset" value="Limpar todos os campos" class="btn btn-danger">
+    <input type="reset" value="Limpar todos os campos" class="btn btn-info">
+    <a href="/areaadmin" class="btn btn-danger">Voltar ao menu principal</a>
+    <br><br>
   </form>
 </div>
 
