@@ -68,9 +68,8 @@
     @foreach($proximos as $p)
       <div class="col-md-2" align="center">
         <img src="{{$p->filme->capa}}" alt="" width="130" height="192">
-        <br>
-        <p id="conteudo"><strong>{{$p->filme->nome}}</strong><br>
-        Data prevista: Set/2017</p>
+        <br><br>
+        <p id="conteudo"><strong>{{$p->filme->nome}}</strong><br></p>
         <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
       </div>
     @endforeach

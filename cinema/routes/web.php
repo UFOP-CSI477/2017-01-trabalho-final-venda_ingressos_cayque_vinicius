@@ -21,6 +21,16 @@ Route::get('/', function () {
 
 Route::get('/inicio', 'InicioController@index');
 
+Route::get('/listafilmes/acao', 'ListaFilmesController@filmesAcao');
+Route::get('/listafilmes/comedia', 'ListaFilmesController@filmesComedia');
+Route::get('/listafilmes/animacao', 'ListaFilmesController@filmesAnimacao');
+Route::get('/listafilmes/romance', 'ListaFilmesController@filmesRomance');
+Route::get('/listafilmes/suspense', 'ListaFilmesController@filmesSuspense');
+Route::get('/listafilmes/terror', 'ListaFilmesController@filmesTerror');
+
+Route::get('/detalhes/{id}', 'SessaosController@detalhes');
+
+
 Route::get('/areaadmin', function () {
     return view('areaAdmin.principal');
 });

@@ -57,6 +57,13 @@ class SessaosController extends Controller
         return view('sessaos.show')->with('sessao',$sessao);
     }
 
+    public function detalhes($id)
+    {
+      $filme = Filme::find($id);
+      $sessoes = Sessao::where('filme_id', '=', $id)->get();
+      return view('areaInicio.detalhesFilme')->with('filme', $filme)->with('sessoes', $sessoes);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

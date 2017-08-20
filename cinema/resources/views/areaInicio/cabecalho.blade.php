@@ -30,27 +30,27 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Ação</a>
+            <a class="nav-link" href="/listafilmes/acao">Ação</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Comédia</a>
+            <a class="nav-link" href="/listafilmes/comedia">Comédia</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Fantasia</a>
+            <a class="nav-link" href="/listafilmes/animacao">Animação</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Romance</a>
+            <a class="nav-link" href="/listafilmes/romance">Romance</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Suspense</a>
+            <a class="nav-link" href="/listafilmes/suspense">Suspense</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Terror</a>
+            <a class="nav-link" href="/listafilmes/terror">Terror</a>
           </li>
         </ul>
 

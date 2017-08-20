@@ -20,6 +20,25 @@
   font-family: 'Roboto', sans-serif;
 }
 
+#planofundo {
+  background-color: white;
+  opacity: 0.85;
+}
+
+#titulofilmes {
+  font-family: 'Archivo', sans-serif;
+}
+
+#backpagina {
+  background-image: url("/img/moviePattern.png");
+  background-repeat:repeat;
+  
+}
+
+
+
+
+
 /* tab color */
 
 

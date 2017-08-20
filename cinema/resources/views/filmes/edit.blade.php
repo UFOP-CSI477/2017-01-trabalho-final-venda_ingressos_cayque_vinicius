@@ -18,7 +18,7 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <label for="genero">Genêro:</label>
+          <label for="genero">Gênero:</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
             <input type="text" class="form-control" name="genero" value="{{ $filmes->genero}}">
@@ -60,7 +60,7 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
             <select class="" name="classificacao">
               <option value="">Selecione...</option>
-              <option value="L">L - Livre</option>
+              <option value="0">L - Livre</option>
               <option value="10">10 - Não recomendado para menores de 10 anos</option>
               <option value="12">12 - Não recomendado para menores de 12 anos</option>
               <option value="14">14 - Não recomendado para menores de 14 anos</option>

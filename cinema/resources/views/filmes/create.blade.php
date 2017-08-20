@@ -25,7 +25,7 @@
               <option value="Ação">Ação</option>
               <option value="Comédia">Comédia</option>
               <option value="Romance">Romance</option>
-              <option value="Fantasia">Fantasia</option>
+              <option value="Fantasia">Animação</option>
               <option value="Terror">Terror</option>
               <option value="Suspense">Suspense</option>
             </select>
@@ -67,7 +67,7 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
             <select class="" name="classificacao">
               <option value="">Escolha...</option>
-              <option value="L">L - Livre</option>
+              <option value="0">L - Livre</option>
               <option value="10">10 - Não recomendado para menores de 10 anos</option>
               <option value="12">12 - Não recomendado para menores de 12 anos</option>
               <option value="14">14 - Não recomendado para menores de 14 anos</option>
