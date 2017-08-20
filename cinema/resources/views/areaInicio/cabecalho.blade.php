@@ -58,7 +58,7 @@
 
             <label for="" class="text-muted" id="tituloinicio"><strong>Seja bem-vindo(a),</strong>{{ Auth::user()->name }}.  </label>
             <a href="/carrinho" class="btn btn-outline-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Ver meu carrinho</a>
-            <a href="{{ route('logout') }}" class="btn btn-outline-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> Sair</a>
+            <a href="{{ route('logout') }}" class="btn btn-outline-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}
             </form>
@@ -96,12 +96,6 @@
       </div>
     </footer>
 
-  </div><!-- /.container -->
-
-
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
   <script src="../../../../assets/js/vendor/popper.min.js"></script>

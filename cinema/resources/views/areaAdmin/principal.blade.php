@@ -9,6 +9,7 @@
         <li><a data-toggle="pill" href="#menu2">Filmes</a></li>
         <li><a data-toggle="pill" href="#menu3">Sessões</a></li>
         <li><a data-toggle="pill" href="#menu4">Usuários</a></li>
+        <li><a href="/">Ir para o site</a></li>
       </ul>
     </div>
   </div>

@@ -103,7 +103,7 @@
 
 
 
-                <input type="submit" class="btn btn-success text-center" value="Adicionar ao carrinho">
+                <input type="submit" class="btn btn-success text-center" value="Adicionar ao carrinho &raquo;">
               </form>
             </div>
           @endif

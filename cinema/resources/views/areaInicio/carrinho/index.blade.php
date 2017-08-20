@@ -61,12 +61,17 @@
               <td>{{$i->sessao->local}}</td>
               <td>{{$i->sessao->preco}}</td>
               <td>{{$i->quantidade}}</td>
-              <td><a href="/carrinho/{{$i->id}}" class="btn btn-danger">Excluir</a></td>
+              <td><a href="/carrinho/{{$i->id}}" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
             </tr>
             @endforeach
           </tbody>
 
         </table>
+        <div align="right">
+          <a href="#" class="btn btn-info"><i class="fa fa-print" aria-hidden="true"></i> Imprimir reservas</a>
+        </div>
+
+        <br><br>
       @endif
 
       </div>
