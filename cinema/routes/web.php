@@ -35,6 +35,8 @@ Route::get('/users/listar', 'UsersController@view');
 
 Route::resource('/banners', 'BannersController');
 
+Route::resource('/carrinho', 'CarrinhoController');
+
 Route::resource('/proximos', 'ProximosController');
 
 Route::resource('/filmes', 'FilmesController');

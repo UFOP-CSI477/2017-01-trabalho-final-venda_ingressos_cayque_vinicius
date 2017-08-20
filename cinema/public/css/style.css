@@ -25,6 +25,10 @@
   opacity: 0.85;
 }
 
+#fundobranco {
+  background-color: white;
+}
+
 #titulofilmes {
   font-family: 'Archivo', sans-serif;
 }
@@ -32,7 +36,7 @@
 #backpagina {
   background-image: url("/img/moviePattern.png");
   background-repeat:repeat;
-  
+
 }
 
 
